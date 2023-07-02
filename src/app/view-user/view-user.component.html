@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="from-flooting mb-3">
+                <label  for="name">Name :</label><br>
+                <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name">
+                <label  for="email">Email Id :</label><br>
+                <input type="text" class="form-control" id="email" name="email" [(ngModel)]="email">
+                <label  for="mobile">Mobile Number :</label><br>
+                <input type="text" class="form-control" id="mobile" name="mobile" [(ngModel)]="mobile">
+                <label  for="password">Password :</label><br>
+                <input type="text" class="form-control" id="password" name="password" [(ngModel)]="password">
+                
+            </div>
+            <button type="button" (click)="addUser()">Add User</button>
+        </div>
+    </div>
+</div>
+<br>
+<div class="abc">
+    <div>
+        <table border="5" [cellSpacing]="5" [cellPadding]="5">
+            <thead>
+                <tr>
+                    <th >NAME</th>
+                    <th >Email Id</th>
+                    <th >Mobile</th>
+                    <th >Password</th>
+                    <th >Action</th>  
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let u of userList">
+                    <td>{{u.name}}</td>
+                    <td>{{u.email}}</td>
+                    <td>{{u.mobile}}</td>
+                    <td>{{u.password}}</td>
+                    <td><button class="btn btn-outline-danger" (click)="deleteUser(u)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

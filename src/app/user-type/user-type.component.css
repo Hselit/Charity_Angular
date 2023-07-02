@@ -1,0 +1,13 @@
+#usdet{
+    margin:30px;
+    border-radius: 5px;
+    padding-top: 30px;
+    background-color: aqua;
+    text-align: center;
+    height: 150px;
+    width:700px;
+    margin-left: auto;
+    margin-top:150px;
+    z-index: 0;
+
+}

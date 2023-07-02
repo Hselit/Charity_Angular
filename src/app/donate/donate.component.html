@@ -1,0 +1,25 @@
+
+<h3><b>Donation Form</b></h3><br><br>
+<div>
+    <form #f="ngForm" (ngSubmit)="addData(f)">
+    <label> Name :<input type="text" name="name" required ngModel></label><br><br>
+    <label>Address :<input type="text" name="address" ngModel required></label><br><br>
+    <label>Email Id :<input type="email" name="email" required ngModel></label><br><br>
+    <label>Mobile Number :<input type="text" name="mobile" ngModel></label><br><br>
+    <label>Bank Name : <select name="bank_name"required ngModel>
+        <option selected>Select one</option>
+        <option>State Bank of India</option>
+        <option>TamilNadu Mercandile Bank</option>
+        <option>ICICI</option>
+        <option>IOB</option>
+        <option>HDFC Bank</option>
+        <option>Yes Bank</option>
+    </select>
+    </label><br><br>
+    <label>Amount :<input type="number" name="amount" ngModel required></label>
+    <br><br>
+    <button type="submit">Save</button>
+    </form>
+
+<br>
+</div>

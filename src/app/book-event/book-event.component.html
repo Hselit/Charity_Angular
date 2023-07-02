@@ -1,0 +1,10 @@
+<h3>Event Booking Form For Volunteer</h3><br>
+<div>
+    <label>Name :<input type="text" name="name" [(ngModel)]="name"></label><br><br>
+    <label>Place :<input type="text" name="place" [(ngModel)]="place"></label><br><br>
+    <label>Mobile :<input type="text" name="mobile" [(ngModel)]="mobile"></label><br>
+    <label>Date :<input type="date" name="date" [(ngModel)]="day"></label><br>
+
+</div>
+<button type="submit" (click)="addEvent()">Book Event</button>
+<button (click)="resetForm()">Reset</button>

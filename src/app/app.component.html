@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Charity</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <br>
+    <div id="header">
+    <div id="titl">
+      <h1>Pluto PhilanthroTech Organization</h1>
+    </div>
+    <div id="box">
+      <hr><h3>
+      <marquee>Welcome to Pluto PhilanthroTech Organisation Website</marquee>
+      </h3><hr>
+    </div>
+    <div id="sebox">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="#" (click)="func()" routerLink="/user" routerLinkActive="active">User</a></li>
+            <li><a href="#" (click)="func()" routerLink="/volunteer" routerLinkActive="active">Volunteer</a></li>
+            <li><a href="#" (click)="func()" routerLink="/admin" routerLinkActive="active">Admin</a></li>
+            <li><a href="#" (click)="func()" routerLink="/user-type" routerLinkActive="active">What ?</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+      </div>
+    </div>
+    	<div id="image_container">
+        <marquee>
+          <img *ngIf="di" src="../assets/charity.jpg" height="500px" width="800px">&nbsp;&nbsp;
+          <img *ngIf="di" src="../assets/child.jpg" height="500px" width="800px">&nbsp;&nbsp;
+          <img *ngIf="di" src="../assets/image.jpg" height="500px" width="800px">&nbsp;&nbsp;
+          <img *ngIf="di" src="../assets/volunteering.jpg" height="500px" width="800px">&nbsp;&nbsp;
+          <img *ngIf="di" src="../assets/waterdonate.jpg" height="500px" width="800px">&nbsp;&nbsp;
+          <!--<img src="child.jpg" height="600px" width="800px">&nbsp;-->
+        </marquee>	
+      </div>
+    <div id="lode">
+      <router-outlet></router-outlet>
+    </div>
+    <div id="con">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a><span>&nbsp;&nbsp;</span>
+<a href="#" class="fa fa-twitter"></a><span>&nbsp;&nbsp;</span>
+<a href="#" class="fa fa-linkedin"></a><span>&nbsp;&nbsp;</span>
+<a href="#" class="fa fa-youtube"></a><span>&nbsp;&nbsp;</span>
+<a href="#" class="fa fa-instagram"></a><span>&nbsp;&nbsp;</span>
+<a href="#" class="fa fa-pinterest"></a><span>&nbsp;&nbsp;</span>
+      
+    </div>
+  </body>
+</html>

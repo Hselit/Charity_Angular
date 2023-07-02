@@ -1,0 +1,10 @@
+<div>
+    <h4><b>Register</b> </h4><br>
+    <label><b>Email Id :  </b><input type="email" name="email" required [(ngModel)]="email"></label><br><br>
+    <label><b>Password :  </b><input type="password" name="password"  required [(ngModel)]="password" ></label><br><br>
+    <input type="hidden" value="User">
+    <br>
+    <button (click)="uregister()">Register</button><span>&nbsp;&nbsp;</span><input type="button" (click)="resetForm()" value="Reset"><br><br>
+    <label><button routerLink="/user" routerLinkActive="active"><a><b>Already Having an Account ?  </b></a></button></label>
+    
+</div>

@@ -1,0 +1,24 @@
+<div >
+    <h2>Request Form</h2><br>
+    <form id="ab">
+        <label>Bank Name : <select name="bank_name" required [(ngModel)]="bank_name">
+            <option selected>Select one</option>
+        <option value="State Bank of India">State Bank of India</option>
+        <option value="TamilNadu Mercandile Bank">TamilNadu Mercandile Bank</option>
+        <option value="ICICI">ICICI</option>
+        <option value="IOB">IOB</option>
+        <option value="HDFC Bank">HDFC Bank</option>
+        <option value="Yes Bank">Yes Bank</option>
+    </select></label>
+       <br><br>
+        <label><b>Account Holder Name :</b><input type="text" name="acc_name" required [(ngModel)]="acc_hold_name"></label><br><br>
+        <label><b>Account Holder Mobile Number :</b><input type="text" name="acc_mobile" pattern="{^[0-9]{10}$}" required [(ngModel)]="acc_mobile"></label><br><br>
+        <label><b>Account Number :</b><input type="text" name="acc_no" pattern="{^[0-9]{12}$}" required [(ngModel)]="acc_no"></label><br><br>
+        <label><b>IFSC Code :</b><input type="text" name="ifsc" pattern="{^[A-Z0-9]{10}$}" required [(ngModel)]="ifsc"></label><br><br>
+        <label><b>Estimated Amount :</b><input type="text" name="amount" required [(ngModel)]="amount"></label><br><br>       
+        <label><b>Remarks :</b><textarea name="remarks" placeholder="Enter your Remarks here...(optional)" width="50px" height="20px" [(ngModel)]="remarks"></textarea><br></label><br>
+        <br><br>
+    </form><br>
+    <button type="submit" (click)="addRequest()">Submit Request</button><span>&nbsp;&nbsp;&nbsp;</span><input type="reset" (click)="resetForm()" value="Reset">
+
+</div>

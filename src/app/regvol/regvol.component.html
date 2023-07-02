@@ -1,0 +1,18 @@
+<h3><b>Event Booking Form For Volunteer</b></h3><br><br>
+<div>
+    <label>Name :<input type="text" name="name" required [(ngModel)]="name"></label><br><br>
+    <label>Place :<input type="text" required name="place" [(ngModel)]="place"></label><br><br>
+    <label>Mobile :<input type="text" name="mobile" required [(ngModel)]="mobile"></label><br><br>
+    <label>Date :<input type="date" name="day" required [(ngModel)]="day"></label><br><br>
+    <label>Event Type :<select required>
+        <option value="Social Service">Social Service</option>
+        <option value="Orphan Children Event">Orphan Children Event</option>
+        <option value="Things Donate">Things Donate</option>
+        <option value="Volunteering">Volunteering</option>
+    </select></label><br><br>
+</div>
+<br>
+<button type="submit" (click)="addBook()">Click to Complete Booking</button><span>&nbsp;&nbsp;</span>
+<button (click)="resetForm()">Reset</button>
+
+

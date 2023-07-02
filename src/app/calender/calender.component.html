@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<title>Calendar 08</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="calender.component.css">
+<script nonce="79beb9c7-0383-487c-8ca8-6efcf780cd73">(function(w,d){!function(f,g,h,i){f[h]=f[h]||{};f[h].executed=[];f.zaraz={deferred:[],listeners:[]};f.zaraz.q=[];f.zaraz._f=function(j){return function(){var k=Array.prototype.slice.call(arguments);f.zaraz.q.push({m:j,a:k})}};for(const l of["track","set","debug"])f.zaraz[l]=f.zaraz._f(l);f.zaraz.init=()=>{var m=g.getElementsByTagName(i)[0],n=g.createElement(i),o=g.getElementsByTagName("title")[0];o&&(f[h].t=g.getElementsByTagName("title")[0].text);f[h].x=Math.random();f[h].w=f.screen.width;f[h].h=f.screen.height;f[h].j=f.innerHeight;f[h].e=f.innerWidth;f[h].l=f.location.href;f[h].r=g.referrer;f[h].k=f.screen.colorDepth;f[h].n=g.characterSet;f[h].o=(new Date).getTimezoneOffset();if(f.dataLayer)for(const s of Object.entries(Object.entries(dataLayer).reduce(((t,u)=>({...t[1],...u[1]})))))zaraz.set(s[0],s[1],{scope:"page"});f[h].q=[];for(;f.zaraz.q.length;){const v=f.zaraz.q.shift();f[h].q.push(v)}n.defer=!0;for(const w of[localStorage,sessionStorage])Object.keys(w||{}).filter((y=>y.startsWith("_zaraz_"))).forEach((x=>{try{f[h]["z_"+x.slice(7)]=JSON.parse(w.getItem(x))}catch{f[h]["z_"+x.slice(7)]=w.getItem(x)}}));n.referrerPolicy="origin";n.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(f[h])));m.parentNode.insertBefore(n,m)};["complete","interactive"].includes(g.readyState)?zaraz.init():f.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+<section class="ftco-section">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6 text-center mb-5">
+<h2 class="heading-section">Calendar #08</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="content w-100">
+<div class="calendar-container">
+<div class="calendar">
+<div class="year-header">
+<span class="left-button fa fa-chevron-left" id="prev"> </span>
+<span class="year" id="label"></span>
+<span class="right-button fa fa-chevron-right" id="next"> </span>
+</div>
+<table class="months-table w-100">
+<tbody>
+<tr class="months-row">
+<td class="month">Jan</td>
+<td class="month">Feb</td>
+<td class="month">Mar</td>
+<td class="month">Apr</td>
+<td class="month">May</td>
+<td class="month">Jun</td>
+<td class="month">Jul</td>
+<td class="month">Aug</td>
+<td class="month">Sep</td>
+<td class="month">Oct</td>
+<td class="month">Nov</td>
+<td class="month">Dec</td>
+</tr>
+</tbody>
+</table>
+<table class="days-table w-100">
+<td class="day">Sun</td>
+<td class="day">Mon</td>
+<td class="day">Tue</td>
+<td class="day">Wed</td>
+<td class="day">Thu</td>
+<td class="day">Fri</td>
+<td class="day">Sat</td>
+</table>
+<div class="frame">
+<table class="dates-table w-100">
+<tbody class="tbody">
+</tbody>
+</table>
+</div>
+<button class="button" id="add-button">Add Event</button>
+</div>
+</div>
+<div class="events-container">
+</div>
+<div class="dialog" id="dialog">
+<h2 class="dialog-header"> Add New Event </h2>
+<form class="form" id="form">
+<div class="form-container" align="center">
+<label class="form-label" id="valueFromMyButton" for="name">Event name</label>
+<input class="input" type="text" id="name" maxlength="36">
+<label class="form-label" id="valueFromMyButton" for="count">Number of people to invite</label>
+<input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
+<input type="button" value="Cancel" class="button" id="cancel-button">
+<input type="button" value="OK" class="button button-white" id="ok-button">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7bbbc53f0f44b2a3","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.3.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
